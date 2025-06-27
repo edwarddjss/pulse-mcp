@@ -1,0 +1,50 @@
+{
+  "name": "pulse-mcp",
+  "version": "2.0.0",
+  "main": "build/index.js",
+  "bin": {
+    "pulse-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "clean": "rm -rf build",
+    "test": "node --test",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "system-management",
+    "wake-on-lan",
+    "remote-control",
+    "monitoring",
+    "automation"
+  ],
+  "author": "Edward J",
+  "license": "MIT",
+  "description": "PULSE - A comprehensive Model Context Protocol server for system management, monitoring, and remote control with natural language interfaces",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "rate-limiter-flexible": "^7.1.1",
+    "systeminformation": "^5.27.6",
+    "wake_on_lan": "^1.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2"
+  }
+}
